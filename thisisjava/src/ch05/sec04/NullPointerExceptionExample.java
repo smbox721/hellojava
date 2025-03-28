@@ -6,7 +6,7 @@ public class NullPointerExceptionExample {
 		//intArray[0] = 10;	 //NullPointerException
 
 		String str = null;
-		//System.out.println("총 문자수: " + str.length() );	  //NullPointerException
+		System.out.println("총 문자수: " + str.length() );	  //NullPointerException
 	}
 }
 

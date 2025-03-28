@@ -8,7 +8,7 @@ public class ArrayCreateByVaueListExample2 {
 		scores = new int[] { 83, 90, 87 };
 		//배열 항목의 총합을 구하고 출력
 		int sum1 = 0;
-		for(int i=0; i<3; i++) {
+		for(int i=0; i<scores.length; i++) {
 			sum1 += scores[i];
 		}
 		System.out.println("총합 : " + sum1);	

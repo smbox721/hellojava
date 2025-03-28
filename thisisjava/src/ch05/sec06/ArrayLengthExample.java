@@ -7,7 +7,7 @@ public class ArrayLengthExample {
 		
 		//배열 항목의 총합 구하기
 		int sum = 0;
-		for(int i=0; i<scores.length; i++) {
+		for(int i = 0; i < scores.length; i++) { //렝스 돌릴때 같음 부호 넣으면안돼안돼
 			sum += scores[i];
 		}
 		System.out.println("총합 : " + sum);
