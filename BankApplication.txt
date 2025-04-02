@@ -1,0 +1,35 @@
+package HomeWork0401;
+
+import java.util.Scanner;
+	
+public class BankApplication {
+	static Scanner scanner = new Scanner(System.in);
+	public static void main(String[] args) {	
+		boolean run = true;
+		while(run) {
+			System.out.println("------------------------------------------");
+			System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5.종료");
+			System.out.println("------------------------------------------");
+			System.out.print("선택> ");
+			String menu = scanner.nextLine();
+			
+			if(menu.equals("1")) {
+				//계좌생성
+				Account.createAccount();
+			}else if(menu.equals("2")) {
+				//계좌목록
+				Account.showAccount();
+			}else if(menu.equals("3")) {
+				//예금
+				Account.deposit();
+			}else if(menu.equals("4")) {
+				//출금
+				Account.withdraw();
+			}else if(menu.equals("5")){
+				//종료
+				run = false;
+			}
+		}
+		System.out.println("프로그램 종료");
+	}
+}
